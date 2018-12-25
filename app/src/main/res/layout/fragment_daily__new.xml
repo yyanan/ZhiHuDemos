@@ -1,0 +1,37 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Zhihudaily.Daily_New"
+    tools:layout_editor_absoluteY="25dp">
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/view_main"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_calender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="16dp"
+        android:background="#FF4081"
+        android:src="@mipmap/ic_fab_calendar"
+        app:borderWidth="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="16dp" />
+
+    <include layout="@layout/progressbar_layout" />
+</android.support.constraint.ConstraintLayout>
+
+
